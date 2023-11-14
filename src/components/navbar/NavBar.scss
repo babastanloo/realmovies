@@ -1,0 +1,153 @@
+@import '../src/assets/colors/colors.scss';
+
+
+.nav-container{
+    width: 100%;
+    
+    .navbar{
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        background: $secondaryBgColor;
+        .top-nav{
+            height: 30px;
+            width: 100%;
+            padding: 2px 10px;
+            margin: 3px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;         
+            font-size: 30px;
+
+
+            .logo{
+                height: 30px;               
+                img{
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                    border: $primaryGradient;
+                }
+                span{
+                    color: $primaryColor;
+                    font-weight: 700;
+                    font-family: 'Orbitron', sans-serif
+                }
+            }
+
+            .toggle {
+                width: 40px;
+                height: 20px;
+                background-color: $primaryFontColor;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                position: relative;
+            
+
+            .toggle-icon {
+                    color: #f51606;
+                    font-size: 17px;
+                   
+                }
+            .toggle-ball {
+                width: 18px;
+                height: 18px;
+                background-color: black;
+                position: absolute;
+                right: 1px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: 1s ease all;
+            }
+                .toggle-ball.active {
+                    background-color: white;
+                    transform: translateX(-20px);
+                }
+        }
+        
+        }
+    }
+        .down-nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: solid 1px $secondaryColor;
+            border-bottom: solid 1px $secondaryColor;
+            height: 40px;
+            padding: 5px;
+            margin: 5px 0;
+            .serch-nav{
+                flex: 1;
+                margin: 0 20px 0 10px;
+                display: flex;
+                min-width: 150px;
+                position: relative;
+                
+                input{
+                    border: solid 2px $secondaryColor;
+                    height: 25px;
+                    width: 100%;
+                    padding: 5px;
+                    margin: auto;
+                    border-radius: 8px;
+                    box-shadow: $primaryGradient;
+                    &:focus{border: none;}
+                    
+                }
+                    .icon {
+                    padding: 5px 10px;
+                    color: $secondaryColor;
+                    position: absolute;
+                    right: 0;
+                    height: 20px;
+                    cursor: pointer;
+                    
+                    
+                    
+                    }
+                    }
+            .navlist{
+                flex: 3;  
+                margin: 0 10px;
+                
+                .list{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    a{
+                        color: $secondaryFontColor;
+                        &:hover{
+                            color: $secondaryColor;
+                            text-decoration: underline;
+                            transition: ease-in-out;
+                        }
+                    }
+                }
+            }
+            .profile{
+                flex: 1;
+                min-width: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                img{
+                    height: 28px;
+                    width: 28px;
+                    border-radius: 50%;
+                    margin-top: 2px;
+                    margin-right: 20px;
+                }
+                h3{
+                    color: $primaryFontColor;
+                    margin: 10px;
+
+                }
+            }
+
+
+        }
+}

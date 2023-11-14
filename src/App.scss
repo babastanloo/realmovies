@@ -1,0 +1,17 @@
+@import '../src/assets/colors/colors.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $primaryBgColor;
+    // font-family: 'Orbitron', sans-serif;
+    font-family: 'Playfair Display', serif;
+    // font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
